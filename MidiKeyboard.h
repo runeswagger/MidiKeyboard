@@ -1,7 +1,7 @@
 #ifndef _MIDIKEYBOARD_H_
 #define _MIDIKEYBOARD_H_
 
-class _MidiKeyboard {
+class Midi_Keyboard {
 	private:
 	//a 2 event buffer because a low speed device can send up to 8 bytes in one transaction
 	char midiEventBuffer[8];
@@ -16,6 +16,6 @@ class _MidiKeyboard {
 };
 
 //prepare an instance for the user to use
-_MidiKeyboard MidiKeyboard;
+extern Midi_Keyboard MidiKeyboard;
 
 #endif
