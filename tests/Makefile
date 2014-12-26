@@ -2,7 +2,7 @@
 CC = avr-gcc
 OBJCOPY = avr-objcopy
 AVRDUDE = avrdude
-#AVRDUDE_CONF = 
+AVRDUDE_CONF = -C /home/timothy/bin/avrdude.conf
 
 #board
 MCU = attiny85

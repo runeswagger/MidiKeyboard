@@ -376,16 +376,22 @@ usbMFTimeout:
 #else   /* USB_CFG_CHECK_CRC */
 #   if USB_CFG_CLOCK_KHZ == 12000
 #       include "usbdrvasm12.inc"
+#warning "12 Mhz target selected."
 #   elif USB_CFG_CLOCK_KHZ == 12800
 #       include "usbdrvasm128.inc"
+#warning "12.8 Mhz target selected."
 #   elif USB_CFG_CLOCK_KHZ == 15000
 #       include "usbdrvasm15.inc"
+#warning "15 Mhz target selected." 
 #   elif USB_CFG_CLOCK_KHZ == 16000
 #       include "usbdrvasm16.inc"
+#warning "16 Mhz target selected."
 #   elif USB_CFG_CLOCK_KHZ == 16500
 #       include "usbdrvasm165.inc"
+#warning "16.5 Mhz target selected."
 #   elif USB_CFG_CLOCK_KHZ == 20000
 #       include "usbdrvasm20.inc"
+#warning "20 Mhz target selected."
 #   else
 #       error "USB_CFG_CLOCK_KHZ is not one of the supported non-crc-rates!"
 #   endif

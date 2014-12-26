@@ -22,8 +22,7 @@ License along with TrinketKeyboard. If not, see
 #ifndef _CMDLINE_DEFS_H_
 #define _CMDLINE_DEFS_H_
 
-//#include <avr/io.h>
-#include <usbdrv/usbdrv.h>
+#include <avr/io.h>
 
 #if defined(__AVR_ATtiny85__) || defined(__AVR_ATtiny45__) || defined(__AVR_ATtiny25__)
 // the oscillator calibration will cause the F_CPU to change

@@ -1,5 +1,6 @@
 #include "cmdline_defs.h"
 #include "MidiKeyboardC.h"
+#include "descriptors_audio.h"
 #include <avr/power.h>
 
 #define MAX_TRANSFER_SIZE 8
@@ -20,13 +21,13 @@ void usbBegin(){
 	//start vusb
 	cli(); //disable interrupts
 
-	usbInit();
-
 	// run at full speed, because Trinket defaults to 8MHz for low voltage compatibility reasons
 	clock_prescale_set(clock_div_1);
 	calibrateOscillator();
 	
 	PORTB &= ~(_BV(USB_CFG_DMINUS_BIT) | _BV(USB_CFG_DPLUS_BIT));
+	
+	usbInit();
 	
 	usbDeviceDisconnect();
 	_delay_ms(250);

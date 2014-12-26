@@ -21,6 +21,5 @@ License along with TrinketHidCombo. If not, see
 
 #include "cmdline_defs.h"
 #include "usbconfig.h"
-#include "usbdrv/usbdrv.h"
 #include "usbdrv/usbdrv.c"
-#include "descriptors_audio.h"
+#include "osccal.h"

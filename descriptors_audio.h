@@ -10,7 +10,7 @@ struct usb_midi_event {
 //here is my override for usbDescriptorConfig
 #define TOTAL_LEN 0x65, 0x00
 
-PROGMEM const char usbDescriptorConfiguration[] = {
+const PROGMEM char usbDescriptorConfiguration[] = {
 	//this includes the standard config and every interface/endpoint descriptor
 	0x09, 0x02, TOTAL_LEN, 0x02, 0x01, 0x00, 0x80, 0x64,
 //interface descriptors
